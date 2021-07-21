@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNG Selenium 21 WebDriver Suite">
+
+    <!--    <listeners>-->
+    <!--        <listener class-name="com.qa.extentreportlistner.ExtentReporterNG" />-->
+    <!--    </listeners>-->
+
+    <test name="Different Features of testNG">
+        <classes>
+            <class name="testngcommands.Test"/>
+        </classes>
+    </test>
+
+</suite>
