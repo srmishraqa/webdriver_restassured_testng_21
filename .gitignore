@@ -39,6 +39,7 @@ gradle-app.setting
 ## IntelliJ
 ##############################
 test-output/
+screenshots/
 out/
 .idea/
 .idea_modules/
