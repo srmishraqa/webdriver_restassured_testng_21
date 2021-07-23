@@ -9,6 +9,7 @@
     <test name="Different Features of testNG">
         <classes>
             <class name="testngcommands.Test"/>
+            <class name="testngcommands.Test2"/>
         </classes>
     </test>
 
