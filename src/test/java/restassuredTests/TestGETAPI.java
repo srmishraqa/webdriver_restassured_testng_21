@@ -1,26 +1,18 @@
 package restassuredTests;
 
-import com.google.gson.Gson;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.http.Header;
-import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.http.ContentType.JSON;
+
 
 public class TestGETAPI {
 
@@ -29,7 +21,7 @@ public class TestGETAPI {
     @Test
     public void getCall() throws ParseException {
         //passing rest assured headers as MAP
-        Map<String, Object> headerMap = new HashMap<String, Object>();
+        Map<String, Object> headerMap = new HashMap<>();
         headerMap.put("authorization", "Bearer " + accessToken);
 
         Response response = given().
