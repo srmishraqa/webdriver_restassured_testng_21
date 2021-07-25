@@ -19,7 +19,7 @@ public class LaunchWebDriver {
         // Common waits and pre-requisites
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
         // to type address and launch
         driver.get("https://www.google.com");
