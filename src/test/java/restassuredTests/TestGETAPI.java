@@ -38,6 +38,9 @@ public class TestGETAPI {
 
         Assert.assertEquals(response.getStatusCode(), 200, "Status Mismatched");
 
+        // Converted Response of String type to JSON Object type
+        // And then tried to match key , as we find values by Key, the return type is Object
+        // So we have to convert it to string to do the assertions
         JsonPath jsonPath = new JsonPath(response.asString());
         Object ob = jsonPath.get("data[1].name");
         String name = ob.toString().toLowerCase();
