@@ -4,10 +4,10 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,7 +19,7 @@ public class TestGETAPI {
     String accessToken = "d7938d0a9e5dbd50ce0f9b2442ea92bc43554e7a515381480be02ec70ada37b0";
 
     @Test
-    public void getCall() throws ParseException {
+    public void getCall() throws ParseException, org.json.simple.parser.ParseException {
         //passing rest assured headers as MAP
         Map<String, Object> headerMap = new HashMap<>();
         headerMap.put("authorization", "Bearer " + accessToken);
